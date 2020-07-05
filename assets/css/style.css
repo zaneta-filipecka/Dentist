@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    height: 100 px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.18);
+}
+
+.container {
+    width: 100%;
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider {
+    padding-top: 100px;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.title {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
