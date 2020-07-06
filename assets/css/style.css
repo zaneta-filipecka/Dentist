@@ -8,10 +8,57 @@ body {
 
 header {
     position: fixed;
-    height: 100 px;
+    height: 100px;
     width: 100%;
+    top: 0;
     background: #ffffff;
     box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.18);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    flex-direction: column;
+}
+
+header .logo {
+    margin-bottom: 20px;
+    max-width: 100px;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+header nav {
+    margin: 0 -15px;
+}
+
+header nav a {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0 15px;
+    transition-duration: .3s;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        padding-top: 100px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    header .logo {
+        margin-bottom: 0px;
+    }
+
+    header .logo img {
+        max-width: unset;
+    }
 }
 
 .container {
@@ -29,9 +76,9 @@ header {
     align-items: center;
 }
 
-.slider {
+/*.slider {
     padding-top: 100px;
-}
+}*/
 
 .slider img {
     width: 100%;

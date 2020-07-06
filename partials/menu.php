@@ -1,11 +1,10 @@
 <header>
     <div class='container'>
-        <div class='logo'>
-            <img src="assets/image/Logo.jpg"
-        </div>
         <div class='menu'>
+            <a href="/Dentist/" title="" class="logo">
+                <img src="assets/image/Logo.jpg" alt='Mała Syrenka'/>
+            </a>
             <nav>
-                <a href="/Dentist/"> Strona główna </a>
                 <a href="/Dentist/dentists"> Dentyści </a>
                 <a href="/Dentist/pricelist"> Cennik </a>
                 <a href="/Dentist/contact"> Kontakt </a>
