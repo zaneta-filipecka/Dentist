@@ -6,6 +6,9 @@
     <?php require('./partials/menu.php') ?>
 
     <?php require('./site/'.$view) ?>
-    <script src="/API/assets/js/scripts.js"></script>
+
+    <?php require('./partials/footer.php') ?>
+
+    <script src="/Dentist/assets/js/scripts.js"></script>
 </body>
 </html>

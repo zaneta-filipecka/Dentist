@@ -1,13 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #49494a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+/* ========HEADER======== */
 
 header {
     position: fixed;
+    z-index: 10;
     height: 100px;
     width: 100%;
     top: 0;
@@ -41,6 +52,11 @@ header nav a {
     font-weight: 600;
     padding: 0 15px;
     transition-duration: .3s;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (min-width: 600px) {
@@ -61,11 +77,31 @@ header nav a {
     }
 }
 
+/* END OF HEADER */
+
 .container {
     width: 100%;
-    height: 100px;
     max-width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
+}
+
+.flexGrow {
+    flex-grow: 1;
+}
+
+.container__scrollInfo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container img {
+    max-width: 250px;
+}
+
+.container__malasyrenka {
+    padding: 30px;
 }
 
 .menu {
@@ -76,10 +112,6 @@ header nav a {
     align-items: center;
 }
 
-/*.slider {
-    padding-top: 100px;
-}*/
-
 .slider img {
     width: 100%;
 }
@@ -88,4 +120,148 @@ header nav a {
     font-size: 60px;
     text-align: center;
     text-transform: uppercase;
+    padding: 20px;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.content__infoBox {
+    padding: 0 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.contact-form .col {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.contact-form .col.to-right {
+    text-align: right;
+}
+
+.contact-form .col-half {
+    width: 50%;
+    padding: 0 15px;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-family: Roboto;
+}
+
+#subject {
+    resize: none;
+}
+
+.flexWithImage {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.flexWithImage:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.flexWithImage:nth-of-type(even) .content__doctor {
+    text-align: right;
+}
+
+.content__info {
+    text-align: justify;
+    padding: 10px 0;
+}
+
+/* ========FOOTER======== */
+
+footer {
+    background-image: linear-gradient(135deg,rgb(156, 32, 194),rgb(30, 182, 187));
+}
+
+.footer__container {
+    padding: 20px;
+    text-align: center;
+    color: #cecece;
+}
+
+.container__sign {
+    margin-bottom: 20px;
+}
+
+.container__sign:nth-of-type(2) {
+    margin-bottom: 0;
+}
+
+.container__heart {
+    display: inline-block;
+    color: salmon;
+    animation: heartAnimation 1s linear infinite;
+    margin: 0 5px;
+}
+
+@keyframes heartAnimation {
+    0%{
+        transform: scale(1);
+    }
+    73%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(2);
+    }
+    77%{
+        transform: scale(1);
+    }
+    88%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(2);
+    }
+    92%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* END OF FOOTER */
+
+/* ANIMATIONS STYLE */
+
+.infoToBeFadedIn {
+    transform: translate(-100%);
+    transition: transform .5s linear;
+}
+
+.infoToBeFadedIn.scrolled {
+    transform: translate(0);
+}
+
+/* END OF ANIMATIONS STYLE */
+
+/* ADDITIONS */
+
+#twoColoredText {
+    display: inline-block;
+    text-align: center;
+    background: linear-gradient(135deg, rgb(156, 32, 194),rgb(30, 182, 187));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
