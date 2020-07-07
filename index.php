@@ -30,5 +30,26 @@ $app->get('/contact', function (Request $request, Response $response) {
     require('./template.php');
 });
 
+$app->post('/contact', function (Request $request, Response $response) {
+    $parsedBody = $request->getParsedBody();
+    $message = 'Wiadomość została wysłana';
+    $error = false;
+    $text1 = $_POST['firstname'];
+    $text2 = $_POST['lastname'];
+    $text3 = $_POST['subject'];
+    foreach($parsedBody as $field) {
+        if(empty($field) || trim($text1) === '' || trim($text2) === '' || trim($text3) === '') {
+            $message = 'Niepoprawnie uzupełniony formularz';
+            $error = true;
+        }
+    }
+    if(!$error) {
+        $parsedBody = null;
+    }
+
+    $view = 'contact.php';
+    require('./template.php');
+});
+
 $app->run();
 ?>

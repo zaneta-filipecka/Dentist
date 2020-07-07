@@ -38,6 +38,34 @@
                 W razie jakichkolwiek pytań, bądź ustalenia terminu wizyty, prosimy o kontakt (w tym celu należy wejść w zakładkę 
                 <i>Kontakt</i> i uzupełnić formularz kontaktowy).
             </p>
+            <h1 class="title">Nasza praca</h1>
+            <section class='realisation'>
+                <div class='grid'>
+                    <div class='first-column'>
+                        <div>
+                            <img src="assets/image/dentysta1.jpg" alt='shell' />
+                        </div>
+                    </div>
+                    <div class='last-column'>
+                        <div class='first-row'>
+                            <div>
+                                <img src="assets/image/dentysta2.jpg" alt='Ikea' />
+                            </div>
+                            <div>
+                                <img src="assets/image/dentysta3.jpg" alt='BRW' />
+                            </div>
+                        </div>
+                        <div class='last-row'>
+                            <div>
+                                <img src="assets/image/pacjent.jpg" alt='Orlen' />
+                            </div>
+                            <div>
+                                <img src="assets/image/ząb.jpg" alt='Muzeum Narodowe w Warszawie' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 </section>

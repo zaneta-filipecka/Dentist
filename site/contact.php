@@ -40,12 +40,9 @@
                     <?php echo $message ?>
                 </div>
             <?php endif ?>
-            <div class="col to-right">
                 <button type="submit">
                     Wyślij
                 </button>
-            </div>
-
         </form>
     </div>
 </section>

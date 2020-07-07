@@ -2,7 +2,7 @@ let scrolled = false;
 
 window.addEventListener("DOMContentLoaded", () => {
 
-    // ---------- T I M E -------------
+    // ======== TIME ========
 
     const date = new Date().getFullYear();
 
@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
     timeReserved.textContent = date;
 
 
-    // ---------- A N I M A T I O N S ----------
+    // ======== ANIMATIONS ========
 
     const textsToFadein = [...document.querySelectorAll('.infoToBeFadedIn')];
 
@@ -36,3 +36,32 @@ window.addEventListener("DOMContentLoaded", () => {
     })
 
 })
+
+// const contactForm = document.querySelector('.contact-form');
+
+// if(contactForm) {
+//     contactForm.addEventListener('submit', function(event) {
+//         event.preventDefault();
+//         try {
+//             const fields = contactForm.querySelectorAll('input, select, textarea')
+//             let error = false;
+//             fields.forEach(field => {
+//                 if(!field.value) {
+//                     error = true;
+//                 }
+//                 else if(field.value.trim().length=0) {
+//                     error = true;
+//                     console.log(`z trim: ${field.textContent.trim()}`);
+//                     console.log(`bez trim: ${field.textContent}`);
+//                 }
+//             });
+//             if(error) {
+//                 alert("Proszę uzupełnić wymagane pole");
+//                 return;
+//             }
+//             this.submit();
+//         } catch(e) {
+//             alert("Przepraszamy, wystąpił błąd");
+//         }
+//     })
+// }
